@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="todo-card">
+
+            <h1>TaskFlow</h1>
+
+            <p id="date">
+                Monday, Jan 1
+            </p>
+
+            <div class="input-box">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Add a new task...">
+
+                <button onclick="addTask()">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+            </div>
+
+            <div class="task-stats">
+
+                <div class="stat-box">
+
+                    <h3 id="totalTasks">0</h3>
+
+                    <span>Total</span>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h3 id="completedTasks">0</h3>
+
+                    <span>Completed</span>
+
+                </div>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
